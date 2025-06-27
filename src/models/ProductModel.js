@@ -29,7 +29,7 @@ const productSchema = new mongoose.Schema(
       default: 0.0,
     },
     description: {
-      type: string,
+      type: String,
       required: true,
     },
   },
@@ -37,3 +37,5 @@ const productSchema = new mongoose.Schema(
     timestamps: true,
   }
 );
+
+module.exports = mongoose.model('Product', productSchema);
